@@ -236,9 +236,9 @@ migrate: ## run django migrations
 	@$(MANAGE) migrate
 .PHONY: migrate
 
-superuser: ## Create an admin superuser with password "admin"
+superuser: ## Create an admin superuser with password "000"
 	@echo "$(BOLD)Creating a Django superuser$(RESET)"
-	@$(MANAGE) createsuperuser --email admin@example.com --password admin
+	@$(MANAGE) createsuperuser --email administrateur@example.com --password 000
 .PHONY: superuser
 
 shell-back: ## open a shell in the backend container
